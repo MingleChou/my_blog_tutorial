@@ -21,5 +21,4 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', views.home, name = 'home'),
     url(r'^(?P<id>\d+)/$', views.detail, name = 'detail'),
-    # url(r'^test/$', views.test),
 ]
