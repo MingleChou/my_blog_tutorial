@@ -2,6 +2,9 @@
 
 {% block content %}
 <div class="posts">
+	{% if error %}
+		<h2 class="post-title">NOT Found</h2>
+	{% endif %}
 	{% for post in post_list %}
 		<section class="post">
 			<header class="post-header">
